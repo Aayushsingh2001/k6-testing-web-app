@@ -26,6 +26,7 @@ jobs:
         run: |
           sudo apt update
           sudo snap install -y k6
+          sudo apt list --upgradable
 
       - name: Run K6 Load Test
         run: k6 run test.k6.js
