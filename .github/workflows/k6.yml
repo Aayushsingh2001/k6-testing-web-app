@@ -24,7 +24,7 @@ jobs:
 
       - name: Install K6
         run: |
-          sudo snap update
+          sudo apt update
           sudo snap install -y k6
 
       - name: Run K6 Load Test
